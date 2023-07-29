@@ -61,3 +61,13 @@ Step 10: Style form
 
 Import a CSS file and style elements
 Eg. align inputs, style buttons, color errors
+
+Step 11: Create the App.js Component
+
+In the App.js file, import the necessary React module.
+Return JSX code to structure the layout of your application.
+Create a header element to represent the header section of your application.
+Add a h1 element to display the title, e.g., "Login Form".
+Create a main element to represent the main content of your application.
+Within this main element, include the SignInForm component.
+Add a footer element at the end of the div to represent the footer section.
