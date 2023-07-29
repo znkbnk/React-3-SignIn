@@ -37,6 +37,7 @@ const SignInForm = () => {
     if (Object.keys(errors).length === 0) {
       const response = await loginUser();
       if (response.user) {
+        // Redirect user here (e.g., using React Router)
         alert('Login successful!');
       } else {
         setErrors({ form: 'Invalid credentials' });
