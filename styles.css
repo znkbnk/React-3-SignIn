@@ -1,31 +1,65 @@
-//styles.css
+/* App.css */
 
-.login-page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.app {
+  text-align: center;
 }
 
-.login-form {
-  width: 400px;
-  max-width: 100%;
+.app-header {
+  background-color: #007bff;
+  color: #fff;
   padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 4px;  
+}
+
+.app-main {
+  padding: 20px;
+}
+
+.app-footer {
+  background-color: #f8f8f8;
+  padding: 10px 0;
+}
+
+/* SignInForm.css */
+
+.signin-form {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .form-group {
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 
-.submit-btn {
-  background-color: blue;
-  color: white;
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+}
+
+button {
+  width: 100%;
   padding: 10px;
+  background-color: #007bff;
+  color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.submit-btn:disabled {
-  background-color: grey;
+button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
 }
