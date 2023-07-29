@@ -1,16 +1,13 @@
 // SignInForm.js
 
-import React, { useState, useEffect } from 'react';
-import './SignInForm.css'; // Import the CSS file for styling
+import React, { useState  } from 'react';
 
 const SignInForm = () => {
-  // Step 3: Set up component state
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState({});
 
-  // Step 7: Validate function
   const validate = () => {
     const errors = {};
     if (!email) {
@@ -22,20 +19,16 @@ const SignInForm = () => {
     return errors;
   };
 
-  // Step 8: Login user function
   const loginUser = async () => {
-    // Simulate a delay for demonstration purposes
     setLoading(true);
     await new Promise((resolve) => setTimeout(resolve, 1000));
 
-    // Replace this with actual API call to /login endpoint
     const response = { user: { /* User data if login successful */ } };
     
     setLoading(false);
     return response;
   };
 
-  // Step 6: Handle submit
   const handleSubmit = async (e) => {
     e.preventDefault();
     const errors = validate();
@@ -44,7 +37,6 @@ const SignInForm = () => {
     if (Object.keys(errors).length === 0) {
       const response = await loginUser();
       if (response.user) {
-        // Redirect user here (e.g., using React Router)
         alert('Login successful!');
       } else {
         setErrors({ form: 'Invalid credentials' });
@@ -52,7 +44,6 @@ const SignInForm = () => {
     }
   };
 
-  // Step 5: Create input fields
   return (
     <form className="signin-form" onSubmit={handleSubmit}>
       <div className="form-group">
