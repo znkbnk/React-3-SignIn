@@ -1,0 +1,31 @@
+//styles.css
+
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form {
+  width: 400px;
+  max-width: 100%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;  
+}
+
+.form-group {
+  margin: 10px 0;
+}
+
+.submit-btn {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.submit-btn:disabled {
+  background-color: grey;
+}
